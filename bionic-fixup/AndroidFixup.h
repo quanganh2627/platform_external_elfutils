@@ -80,7 +80,8 @@ static inline char *stpcpy(char *dst, const char *src)
 }
 
 /* forward declarations */
-char * dgettext (const char * domainname, const char * msgid);
+//char * dgettext (const char * domainname, const char * msgid);
+#define dgettext(d, m) (m)
 
 ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
